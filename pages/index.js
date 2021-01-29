@@ -1,208 +1,32 @@
-import Head from 'next/head'
+import Head from "next/head";
+import Link from "next/link";
+import Header from "../components/Header/Header.js";
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Realizzazione Siti Web Alessandria</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
+      <Header />
+      <div className="main-wrapper">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur orci orci, euismod eget ornare nec, lacinia et magna. Aliquam urna mauris, malesuada at porta a, viverra sed sem. Sed id diam ut augue iaculis tincidunt sit amet eget tortor. Pellentesque consequat dictum augue, quis scelerisque risus maximus sed. Nunc tempus sit amet odio quis tempor. Aliquam mi massa, dignissim et enim et, efficitur pulvinar velit. Nunc vitae venenatis magna, id faucibus arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent ut tortor felis. Sed ac faucibus ligula, sed auctor ligula. Nullam interdum interdum dolor, ac tincidunt nulla luctus in. Morbi quis odio eget nibh vulputate tempor. Suspendisse rutrum ex sed augue convallis consectetur. Ut efficitur, felis ut finibus vulputate, nibh lacus rutrum lectus, posuere dignissim tortor ante sed metus. Mauris vel eleifend nisl.
+          Aenean convallis metus ut fermentum semper. Duis volutpat pretium metus, nec volutpat tortor vulputate non. Nulla sed est quis tortor aliquet pulvinar sit amet et est. Mauris non risus leo. Phasellus blandit congue volutpat. Aenean varius purus arcu, id fringilla dui congue quis. Maecenas fermentum sollicitudin justo. Aliquam euismod diam tellus. Nulla pellentesque luctus pulvinar. Mauris non velit egestas, malesuada neque in, faucibus mauris. Phasellus nec odio vitae mauris gravida fringilla.
+          Suspendisse dignissim sem ac risus tincidunt laoreet. Nulla hendrerit quam non eros hendrerit, nec rhoncus purus ultricies. Cras et erat lectus. Praesent posuere odio venenatis nunc posuere placerat. In maximus diam sed urna vestibulum, eget condimentum arcu posuere. Sed ornare tincidunt ultricies. Cras a volutpat ante. Phasellus tempor lorem mauris, sed maximus mi volutpat et. Quisque nec lorem sit amet est vestibulum sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec nec velit sit amet quam hendrerit interdum. Vestibulum rhoncus mi dignissim ligula convallis convallis. Vivamus sit amet rutrum nisi. Vestibulum varius ante sed ipsum tempus, vel eleifend nibh varius.
+          Donec eu urna nec turpis scelerisque imperdiet et et quam. Nunc dictum eros a porttitor fringilla. Maecenas interdum luctus elit id maximus. Pellentesque placerat, ante nec tincidunt vestibulum, ipsum tortor pretium ante, et tincidunt ligula felis a libero. Nullam blandit id quam et tincidunt. Praesent vitae tortor sapien. Quisque ut commodo turpis. Donec justo dolor, posuere id lectus sit amet, hendrerit efficitur nunc. Cras aliquam molestie sagittis. Mauris eget massa eu augue lacinia ullamcorper vel vitae metus. Vivamus efficitur, urna at ornare pharetra, mi lectus hendrerit nulla, sit amet viverra ligula turpis nec ipsum.
+          Phasellus ut mi consectetur, pellentesque tellus quis, sollicitudin erat. Suspendisse potenti. Aenean luctus lobortis augue, vel fringilla purus. Vestibulum a neque ut augue vehicula blandit. Ut eget posuere ex. Vestibulum pretium augue a magna condimentum, in convallis lorem accumsan. Sed vulputate ex in dictum gravida.
         </p>
+      </div>
 
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
 
       <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
+        
       `}</style>
 
       <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
+        
       `}</style>
     </div>
   )
