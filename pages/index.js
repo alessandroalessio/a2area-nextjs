@@ -7,6 +7,7 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>Realizzazione Siti Web Alessandria</title>
+        <meta name="description" content="Sono Alessandro Alessio, Web Designer e Developer e mi occupo di realizzare siti web ed Ecommerce ad Alessandria" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
