@@ -36,11 +36,6 @@ export default function Header() {
                     </Link>
                 </Col>
             </Row>
-            <style jsx>{`
-                .header-wrapper .btn{
-                    background: red;
-                }
-            `}</style>
         </Container>
     )
 } 
