@@ -32,7 +32,7 @@ export default function Header() {
                 </Col>
                 <Col md={3}>
                     <Link href="/preventivo/">
-                        <a className="btn btn-outline-dark border-3 rounded-pill text-uppercase pl-4 pr-4">Preventivo gratuito</a>
+                        <a className="btn btn-dark border-3 rounded-pill text-uppercase pl-4 pr-4">Preventivo gratuito</a>
                     </Link>
                 </Col>
             </Row>

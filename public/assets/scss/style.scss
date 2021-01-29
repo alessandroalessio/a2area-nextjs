@@ -7,6 +7,9 @@ body {
     color: #555;
 }
 
+/* Highlighted */
+a.text-dark.highlighted{ background: #333; padding-left: 10px; padding-right: 10px; color: #fff !important; }
+
 /* Letter spacing */
 .ls-1{ letter-spacing: 1px; }
 .ls-2{ letter-spacing: 2px; }
